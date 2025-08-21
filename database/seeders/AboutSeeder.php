@@ -23,10 +23,10 @@ class AboutSeeder extends Seeder
         About::insert([
 
             [
-                'subtitle' => 'Donec at sodales risus. Praesent sodales vitae purus porttitor luctus. Donec sit amet mi quam. Sed eu consectetur elit, in tempor quam. Duis est arcu, interdum non ligula ac, viverra gravida tortor. Nulla a nulla condimentum, suscipit enim a, semper augue. Nullam euismod molestie tellus. Sed tempor pulvinar eros, sed ornare mi ornare id. Fusce finibus magna sit amet nisi porta, tincidunt egestas nunc pharetra. Sed ut mauris non tortor tempus hendrerit.',
+                'subtitle' => 'Donec at sodales risus. Praesent sodales vitae purus porttitor luctus. Donec sit amet mi quam. Sed eu consectetur elit, in tempor quam. Duis est arcu, interdum non ligula ac, viverra gravida tortor.',
                 'birthdate' => Carbon::parse('1983-09-29'),
                 'website' => 'www.example.com',
-                'phone' => '+123 456 789',
+                'phone' => +123456789,
                 'city' => 'Bruxelles, BEL',
                 'age' => 39,
                 'degree' => 'master',
