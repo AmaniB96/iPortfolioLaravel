@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class avatar extends Model
+class Avatar extends Model
 {
     protected $fillable = ['image', 'about_id'];
 
