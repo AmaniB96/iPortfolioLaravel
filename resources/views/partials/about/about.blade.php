@@ -1,4 +1,4 @@
-<h2 class="about-title">About</h2>
+<h2 id='about' class="about-title">About</h2>
 
 <p class="about-subtitle">{{ $about->subtitle }}</p>
 
