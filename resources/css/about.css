@@ -1,0 +1,51 @@
+.about-title {
+    font-size: 2em;
+    color: #1a3556;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1da1f2;
+    display: inline-block;
+}
+.about-subtitle {
+    color: #444;
+    margin-bottom: 20px;
+}
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.about-img {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 3px solid #1da1f2;
+}
+.about-info {
+    flex: 1;
+}
+.about-role {
+    font-size: 1.3em;
+    color: #1a3556;
+    margin-bottom: 10px;
+}
+.about-desc {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+.about-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about-details li {
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.about-details a {
+    color: #1a3556;
+    text-decoration: underline;
+}

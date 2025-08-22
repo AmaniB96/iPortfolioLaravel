@@ -9,3 +9,24 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#main-content {
+    margin-left: 270px;
+    padding: 30px 50px;
+}
+
+/* Style for sections */
+section {
+    padding: 60px 0;
+}
+
+/* Light blue background for skills section */
+section.skills-section {
+    background-color: #f7fbfe;
+}

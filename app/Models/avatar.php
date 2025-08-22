@@ -10,6 +10,6 @@ class Avatar extends Model
     protected $fillable = ['image', 'about_id'];
 
     public function about(){
-        return $this->belongsTo(Avatar::class);
+        return $this->belongsTo(About::class);
     }
 }
