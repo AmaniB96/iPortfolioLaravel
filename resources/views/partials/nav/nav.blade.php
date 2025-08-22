@@ -14,7 +14,7 @@
         <ul>
             <li><a href="{{ route('home') }}"><i class="fa-solid fa-house"></i> Home</a></li>
             <li><a href="" class="active"><i class="fa-solid fa-user"></i> About</a></li>
-            <li><a href=""><i class="fa-solid fa-book"></i> Portfolio</a></li>
+            <li><a href="{{ route('home') }}#portfolio"><i class="fa-solid fa-book"></i> Portfolio</a></li>
             <li><a href=""><i class="fa-solid fa-briefcase"></i> Services</a></li>
             <li><a href=""><i class="fa-solid fa-envelope"></i> Contact</a></li>
             <li><a href=""><i class="fa-solid fa-right-to-bracket"></i> Log In</a></li>

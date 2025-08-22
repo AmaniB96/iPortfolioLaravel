@@ -3,4 +3,5 @@
 @section('content')
 @include('partials.about.about')
 @include('partials.skill.skill')
+@include('partials.portfolio.portfolio')
 @endsection
