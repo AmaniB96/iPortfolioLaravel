@@ -6,4 +6,5 @@
 @include('partials.portfolio.portfolio')
 @include('partials.services.services')
 @include('partials.testimonials.testimonials')
+@include('partials.contact.contact')
 @endsection
