@@ -3,7 +3,7 @@
 <p class="about-subtitle">{{ $about->subtitle }}</p>
 
 <div class="about-container">
-    <img src="{{ $about->avatar->image }}" class="about-img" width="300" height="300" alt="Profile">
+    <img src="{{ asset('storage/' . $about->avatar->image) }}" class="about-img" width="300" height="300" alt="Profile">
     <div class="about-info">
         <h4 class="about-role">UI/UX Designer & Web Developer.</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dicta iure omnis modi maxime voluptates, dignissimos maiores. Magni, dolor. Sint.</p>

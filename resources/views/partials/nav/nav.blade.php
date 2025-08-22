@@ -1,6 +1,6 @@
 <aside class="sidebar">
     <div class="profile">
-        <img src="{{ $about->avatar->image }}" class="profile-avatar" width="300" height="300" alt="Profile">
+        <img src="{{ asset('storage/' . $about->avatar->image) }}" class="profile-avatar" width="300" height="300" alt="Profile">
         <h2 class="profile-name">Gary Axen</h2>
         <div class="profile-social">
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -16,8 +16,8 @@
             <li><a href="{{ route('home') }}#about" class="active"><i class="fa-solid fa-user"></i> About</a></li>
             <li><a href="{{ route('home') }}#portfolio"><i class="fa-solid fa-book"></i> Portfolio</a></li>
             <li><a href="{{ route('home') }}#services"><i class="fa-solid fa-briefcase"></i> Services</a></li>
-            <li><a href=""><i class="fa-solid fa-envelope"></i> Contact</a></li>
-            <li><a href=""><i class="fa-solid fa-right-to-bracket"></i> Log In</a></li>
+            <li><a href="{{ route('home') }}#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            <li><a href="{{ route('backHome.index') }}"><i class="fa-solid fa-right-to-bracket"></i> Log In</a></li>
         </ul>
     </nav>
 </aside>

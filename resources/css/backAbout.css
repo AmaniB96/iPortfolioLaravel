@@ -1,0 +1,54 @@
+.about-back-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+.about-back-form .form-group {
+    margin-bottom: 20px;
+}
+
+.about-back-form label {
+    font-weight: 600;
+    color: #1a3556;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.about-back-form .form-control {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #dbe6f3;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #f7fbfe;
+    color: #333;
+    transition: border-color 0.2s;
+}
+
+.about-back-form .form-control:focus {
+    border-color: #1da1f2;
+    outline: none;
+}
+
+.btn-back-submit {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background: #1da1f2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.btn-back-submit:hover {
+    background: #176bb4;
+}
