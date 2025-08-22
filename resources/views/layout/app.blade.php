@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/services.css">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>@yield('title')</title>
 </head>
