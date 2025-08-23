@@ -1,3 +1,6 @@
+<section>
+
+<h1>About Edit</h1>
 <form action="{{ route('backHome.update', $about->id) }}" method="POST" class="about-back-form" enctype="multipart/form-data">
     @csrf
     @method('PUT')
@@ -50,3 +53,4 @@
     </div>
     <button type="submit" class="btn-back-submit">Enregistrer</button>
 </form>
+</section>
