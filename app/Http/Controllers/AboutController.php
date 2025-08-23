@@ -36,6 +36,6 @@ class AboutController
     }
         $about->save();
 
-        return redirect('backHome');
+        return redirect('backHome.index');
     }
 }

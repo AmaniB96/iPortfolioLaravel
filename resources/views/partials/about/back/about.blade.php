@@ -1,7 +1,7 @@
 <section>
 
 <h1>About Edit</h1>
-<form action="{{ route('backHome.update', $about->id) }}" method="POST" class="about-back-form" enctype="multipart/form-data">
+<form action="{{ route('backAbout.update', $about->id) }}" method="POST" class="about-back-form" enctype="multipart/form-data">
     @csrf
     @method('PUT')
     <div class="form-group">
@@ -45,11 +45,11 @@
         <textarea name="subtext" id="subtext" class="form-control">{{ $about->subtext }}</textarea>
     </div>
     <div class="form-group">
-        <label for="src">Avatar</label>
+        <label for="image">Avatar</label>
         @if($about->avatar && $about->avatar->image)
             <img src="{{ asset('storage/' . $about->avatar->image) }}" alt="Avatar" style="max-width:120px; margin-bottom:10px;">
         @endif
-        <input type="file" name="image" id="" class="">
+        <input type="file" name="image" id="image" class="">
     </div>
     <button type="submit" class="btn-back-submit">Enregistrer</button>
 </form>

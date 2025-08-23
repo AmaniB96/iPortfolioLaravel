@@ -1,19 +1,24 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BackHomeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\SkillController;
 use Illuminate\Support\Facades\Route;
 
-// Routes pour le Frontend
+// --- Frontend Routes ---
 Route::get('/', [HomeController::class,'index'])->name('home');
 Route::post('/contact', [HomeController::class, 'store'])->name('contact.store');
 
-//Route pour le Backend
 
-Route::resource('backHome', AboutController::class);
+// --- Backend Routes ---
 
-Route::get('/back/home', [PortfolioController::class, 'index'])->name('backHome.index');
-Route::get('/back/portfolio/create', [PortfolioController::class, 'create'])->name('backPortfolio.create');
-Route::post('/back/portfolio', [PortfolioController::class, 'store'])->name('backPortfolio.store');
-Route::delete('/back/portfolio/{id}', [PortfolioController::class, 'destroy'])->name('backPortfolio.destroy');
+// This is the main route for your admin dashboard
+Route::get('/back/home', [BackHomeController::class, 'index'])->name('backHome.index');
+
+// These resource routes create all the necessary URLs for CRUD operations
+// (index, create, store, show, edit, update, destroy) for each feature.
+Route::resource('/back/about', AboutController::class)->names('backAbout');
+Route::resource('/back/portfolio', PortfolioController::class)->names('backPortfolio');
+Route::resource('/back/skills', SkillController::class)->names('backSkill');
