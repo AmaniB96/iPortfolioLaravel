@@ -23,5 +23,6 @@
     @include('partials.testimonials.back.list')
     <hr>
     @include('partials.contact.back.edit')
-
+    <hr>
+    @include('partials.messages.back.list')
 @endsection
